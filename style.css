@@ -160,17 +160,19 @@ body {
 
 
   /* スマホ表示（幅768px以下） */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 20px;
+      text-align: center; /* ← 追加で中央揃え */
   }
 
   .left,
   .center,
   .right {
-    flex: none;
-    width: 100%;
-    border: none;
+    background-color: #f1f3f5;
+    font-family: 'Libre Baskerville', serif;
+    flex: 0.5;
+    width: 100%;  /* ← 念のため追加 */
   }
 
   .ad-banner {
