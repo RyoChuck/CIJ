@@ -48,6 +48,8 @@ body {
     flex-direction: row;
     height: 100vh;
     font-family: 'Libre Baskerville', serif;
+    width: 100%; /* ← 追加推奨 */
+    flex-wrap: wrap; /* ← 必要に応じて追加 */
   }
   
   .column {
@@ -97,6 +99,7 @@ body {
   .right {
     background-color: #f1f3f5;
     font-family: 'Libre Baskerville', serif;
+    flex: 0.5;  /* ← ここを小さくすることで右を狭く */
   }
   
   .tweet-wrapper {
@@ -154,3 +157,31 @@ body {
     max-height:50px;
  
   }
+
+
+  /* スマホ表示（幅768px以下） */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .center,
+  .right {
+    flex: none;
+    width: 100%;
+    border: none;
+  }
+
+  .ad-banner {
+    max-width: 100%;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .topic-box {
+    margin: 15px 10px;
+  }
+}
