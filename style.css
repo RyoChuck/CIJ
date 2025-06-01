@@ -160,8 +160,8 @@ body {
   .right {
     flex: none;
     width: 100%;
-    box-sizing: border-box;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right:15px;
     border: none;
   }
 
