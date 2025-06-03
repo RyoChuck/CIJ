@@ -175,7 +175,7 @@ body {
   }
 
   .header h1 {
-    font-size: 35px; /* ← 大きく変更（例: 通常20px→28px） */
+    font-size: 30px; /* ← 大きく変更（例: 通常20px→28px） */
     text-align: center;
     line-height: 1.2;
   }
