@@ -180,27 +180,21 @@ body {
     box-sizing: border-box;
   }
 
+
   .tweet-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 0 ;
-    width: 100%;
-  }
-
-  .twitter-embed-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
     margin: 0 auto;
-    padding: 0;
+    width: 100%;
   }
 
   .topic-box {
-    margin: 15px 0;
+    margin: 15px auto;
     padding: 0;
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
   }
 
@@ -210,9 +204,6 @@ body {
     line-height: 1.2;
   }
 
-  .topic-box {
-    margin: 15px 10px;
-  }
 
   .weather-bar {
     font-size: 11px;
