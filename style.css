@@ -172,9 +172,11 @@ body {
   }
 
   blockquote.twitter-tweet {
+    display: block;
     margin: 0 auto !important;
-    width: 100% !important;
-    max-width: 500px; /* ← 推奨値、またはお好みで */
+    padding: 0 !important;
+    width: calc(100% - 20px) !important; /* ← ← 重要ポイント */
+    max-width: 500px;
     box-sizing: border-box;
   }
 
