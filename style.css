@@ -165,13 +165,43 @@ body {
     border: none;
   }
 
-  .ad-banner,
-  .topic-box,
-  .tweet-wrapper,
-  .twitter-embed-wrapper {
+  .ad-banner {
     max-width: 100% !important;
+    width: 100%　!important;
+    margin: 0 auto;
+  }
+
+  .blockquote.twitter-tweet {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .tweet-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .twitter-embed-wrapper {
+    display: flex;
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
+    padding: 0;
+  }
+
+  .topic-box {
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px;
+    box-sizing: border-box;
   }
 
   .header h1 {
