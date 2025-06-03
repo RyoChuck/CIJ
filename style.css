@@ -171,12 +171,10 @@ body {
     margin: 0 auto;
   }
 
-  .blockquote.twitter-tweet {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    display: block;
+  blockquote.twitter-tweet {
+    margin: 0 auto !important;
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 500px; /* ← 推奨値、またはお好みで */
     box-sizing: border-box;
   }
 
@@ -185,7 +183,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 ;
     width: 100%;
   }
 
@@ -198,9 +196,9 @@ body {
   }
 
   .topic-box {
+    margin: 15px 0;
+    padding: 0;
     width: 100%;
-    margin: 15px auto;
-    padding: 10px;
     box-sizing: border-box;
   }
 
