@@ -62,9 +62,8 @@ body {
 
 .topic-box {
   background-color: #000203;
-  border-left: none; /* ← 左線は見出しや中で再現したいなら後で */
   border-radius: 8px;
-  padding: 0;
+  padding: 20px; /* ← ここで左右に黒い余白を確保 */
   margin: 25px auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease;
@@ -74,6 +73,13 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.topic-box-inner {
+  border-left: 6px solid #007acc;
+  padding-left: 10px;
+}
+
+
 
 .topic-box:hover {
   background-color: #e6f0ff;
