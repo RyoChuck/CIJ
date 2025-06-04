@@ -175,8 +175,8 @@ body {
   }
 
   .topic-box-inner {
-    border-left: none;    /* ← 青線削除 */
-    padding-left: 0;      /* ← 空白も除去 */
+    border-left: none !important;
+    padding-left: 0 !important;
   }
 
 
