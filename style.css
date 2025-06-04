@@ -63,7 +63,7 @@ body {
 .topic-box {
   background-color: #000203;
   border-radius: 8px;
-  padding: 20px; /* ← ここで左右に黒い余白を確保 */
+  padding: 6px; /* ← 黒の縁を小さく（20px → 約3分の1） */
   margin: 25px auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease;
