@@ -75,8 +75,8 @@ body {
 }
 
 .topic-box-inner {
-  border-left: 6px solid #007acc;
-  padding-left: 5px;
+  padding-left: 0;
+  border-left: none;
 }
 
 
@@ -201,8 +201,8 @@ body {
 
   .topic-box {
     margin: 15px auto;
-    padding: 0;
-    width: 100%;
+    padding: 8px 6px; /* ← 上下左右ともに適度な余白 */
+    width: fit-content;
     max-width: 100%;
     box-sizing: border-box;
   }
