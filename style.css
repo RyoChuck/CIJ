@@ -62,14 +62,17 @@ body {
 
 .topic-box {
   background-color: #000203;
-  border-left: 6px solid #007acc;
+  border-left: none; /* ← 左線は見出しや中で再現したいなら後で */
   border-radius: 8px;
-  padding: 15px 20px;
-  margin-bottom: 25px;
+  padding: 0;
+  margin: 25px auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease;
-  width: 100%;
+  width: fit-content;
+  max-width: 100%;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .topic-box:hover {
