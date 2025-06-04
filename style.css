@@ -63,8 +63,8 @@ body {
 .topic-box {
   background-color: #000203;
   border-radius: 8px;
-  padding: 6px; /* ← 黒の縁を小さく（20px → 約3分の1） */
-  margin: 25px auto;
+  padding: 8px 6px; /* 上下8px、左右6px：黒縁がコンパクトに */
+  margin: 20px auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease;
   width: fit-content;
