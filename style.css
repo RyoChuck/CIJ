@@ -198,29 +198,32 @@ body {
   }
 
   blockquote.twitter-tweet {
-    display: block;
+    width: 100% !important;
     margin: 0 auto !important;
     padding: 0 !important;
-    width: calc(100% - 20px) !important;
-    max-width: 500px;
     box-sizing: border-box;
   }
 
+  .twitter-embed-wrapper,
   .tweet-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
   }
 
   .topic-box {
-    margin: 15px auto;
-    padding: 8px 6px;
-    width: fit-content;
-    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
     box-sizing: border-box;
+  }
+
+  .topic-box-inner {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .header h1 {
