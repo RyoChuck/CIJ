@@ -154,7 +154,15 @@ body {
   box-sizing: border-box;
 }
 
+/* ---------- スマホ用 ---------- */
 @media (max-width: 768px) {
+  html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
   .container {
     flex-direction: column;
     width: 100%;
@@ -165,11 +173,9 @@ body {
   .center {
     order: 1;
   }
-
   .right {
     order: 2;
   }
-
   .left {
     order: 3;
   }
@@ -179,8 +185,8 @@ body {
   .right {
     flex: none;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
     border: none;
   }
 
@@ -195,22 +201,22 @@ body {
     margin: 0 auto;
   }
 
-  .topic-box,
-  .tweet-wrapper,
-  .twitter-embed-wrapper,
   blockquote.twitter-tweet {
     width: 100vw !important;
+    max-width: 100vw !important;
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
   }
 
+  .twitter-embed-wrapper,
+  .tweet-wrapper,
   .topic-box {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .header h1 {
@@ -228,9 +234,5 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-  }
-
-  body {
-    overflow-x: hidden;
   }
 }
