@@ -155,7 +155,6 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -164,13 +163,26 @@ body {
     margin: 0 auto;
   }
 
+  /* 並び順の変更：Today's topic を上へ */
+  .center {
+    order: 1;
+  }
+
+  .right {
+    order: 2;
+  }
+
+  .left {
+    order: 3;
+  }
+
   .left,
   .center,
   .right {
     flex: none;
     width: 100%;
     padding-left: 15px;
-    padding-right:15px;
+    padding-right: 15px;
     border: none;
   }
 
@@ -178,7 +190,6 @@ body {
     border-left: none !important;
     padding-left: 0 !important;
   }
-
 
   .ad-banner {
     max-width: 100% !important;
@@ -190,11 +201,10 @@ body {
     display: block;
     margin: 0 auto !important;
     padding: 0 !important;
-    width: calc(100% - 20px) !important; /* ← ← 重要ポイント */
+    width: calc(100% - 20px) !important;
     max-width: 500px;
     box-sizing: border-box;
   }
-
 
   .tweet-wrapper {
     display: flex;
@@ -213,13 +223,11 @@ body {
     box-sizing: border-box;
   }
 
-
   .header h1 {
-    font-size: 30px; /* ← 大きく変更（例: 通常20px→28px） */
+    font-size: 30px;
     text-align: center;
     line-height: 1.2;
   }
-
 
   .weather-bar {
     font-size: 11px;
