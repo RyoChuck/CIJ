@@ -1,19 +1,9 @@
+/* --- 共通スタイル --- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  width: 100%;
   overflow-x: hidden;
 }
-
-.section-title {
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  text-decoration: underline;
-}
-
 
 .header {
   width: 100%;
@@ -41,89 +31,68 @@ body {
   text-align: center;
   border-bottom: 1px solid #ccc;
   font-size: 14px;
-  font-family: 'Libre Baskerville', serif;
+}
+
+.weather-bar {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  font-family: 'Libre Baskerville', serif;
-}
-
-.column {
-  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
-  font-family: 'Libre Baskerville', serif;
 }
 
 .left {
-  background-color: rgb(248, 249, 250);
-  font-size: 12px;
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
 .center {
-  flex: 2.5;
-  background-color: #ffffff;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  width: 75%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  margin: 40px 0 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
 }
 
 .topic-box {
-  background-color: #000203;
+  background-color: #fff;
   border-radius: 8px;
-  padding: 8px 6px;
-  margin: 20px auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: background-color 0.3s ease;
-  width: fit-content;
-  max-width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-}
-
-.topic-box-inner {
-  padding-left: 0;
-  border-left: none;
-}
-
-.topic-box:hover {
-  background-color: #e6f0ff;
-  color: #000000;
+  width: 100%;
 }
 
 .topic-box blockquote.twitter-tweet {
   margin: 0 auto !important;
 }
 
-.right {
-  background-color: #f1f3f5;
-  flex: 0.5;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.tweet-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.twitter-embed-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-  width: 100%;
-}
-
 .footer-bar {
   background-color: #eaeaea;
-  padding: 15px 30px;
+  padding: 20px;
   border-top: 1px solid #ccc;
   font-size: 14px;
-  color: #333;
 }
 
 .footer-content {
@@ -131,118 +100,29 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer-left .footer-title {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.footer-center select {
-  font-size: 13px;
-  padding: 4px;
-}
-
-.footer-right a {
-  text-decoration: none;
-  color: #333;
-  font-weight: normal;
-}
-
-.weather-bar {
-  background-color: #000000;
-  text-align: right;
-  padding: 1px 0;
-  font-size: 13px;
-  font-weight: bold;
-  color: hsl(180, 14%, 99%);
-  border-bottom: 1px solid #ccc;
-  max-height: 50px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* ---------- スマホ用 ---------- */
+/* --- レスポンシブ対応（スマホ用） --- */
 @media (max-width: 768px) {
-  html, body {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-
   .container {
     flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-  }
-
-  .center {
-    order: 1;
-  }
-  .right {
-    order: 2;
-  }
-  .left {
-    order: 3;
+    padding: 0 10px;
   }
 
   .left,
-  .center,
-  .right {
-    flex: none;
+  .center {
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    border: none;
+    padding: 10px;
   }
 
-  .topic-box-inner {
-    border-left: none !important;
-    padding-left: 0 !important;
+  .section-title {
+    text-align: center;
+    font-size: 22px;
   }
 
-  .ad-banner {
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0 auto;
-  }
-
-  blockquote.twitter-tweet {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-  }
-
-  .twitter-embed-wrapper,
-  .tweet-wrapper,
   .topic-box {
-    width: 100vw;
-    max-width: 100vw;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .header h1 {
-    font-size: 30px;
-    text-align: center;
-    line-height: 1.2;
-  }
-
-  .weather-bar {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    padding: 10px;
   }
 }
