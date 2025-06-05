@@ -139,6 +139,13 @@ body {
 
 /* --- レスポンシブ対応（スマホ用） --- */
 @media (max-width: 768px) {
+
+  .header h1 {
+    font-size: 20px; /* ← スマホ時に見やすいサイズに調整 */
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+  }
   .container {
     flex-direction: column;
     padding: 0 10px;
