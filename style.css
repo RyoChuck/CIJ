@@ -142,7 +142,8 @@ body {
 
   .header h1 {
     font-size: 25px; /* ← スマホ時に見やすいサイズに調整 */
-    line-height: 1.2;
+    line-height: 1.5;
+  
     text-align: center;
     margin: 0;
   }
