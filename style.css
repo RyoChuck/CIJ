@@ -78,10 +78,13 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
 }
 
 .topic-box blockquote.twitter-tweet {
   margin: 0 auto !important;
+  width: 90% !important;
+  box-sizing: border-box;
 }
 
 .footer-bar {
@@ -153,6 +156,10 @@ body {
 
   .topic-box {
     padding: 10px;
+  }
+
+  .topic-box blockquote.twitter-tweet {
+    width: 100% !important;
   }
 
   .footer-links {
